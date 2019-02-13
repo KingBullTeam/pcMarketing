@@ -1,0 +1,354 @@
+html,
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+img.bgImg {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  background-color: #070133;
+  min-width: 1200px;
+  width: 100%;
+  padding-bottom: 48px;
+}
+
+.container>div {
+  position: relative;
+}
+
+.btnBox {
+  width: 22.5%;
+  margin: 0 auto;
+  padding: 4.25% 0;
+  cursor: pointer;
+}
+
+.zhzBox {
+  width: 55%;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.wxCode {
+  width: 13.4375%;
+  position: absolute;
+  right: 23%;
+  top: 25%;
+}
+
+.wxRight {
+  width: 16%;
+  position: fixed;
+  right: 0;
+  bottom: 5%;
+}
+
+.quotation .zhzh {
+  width: 1.875%;
+  position: absolute;
+  left: 48.8%;
+  top: 28.5%;
+  z-index: 2;
+  animation: rotate 6s linear infinite;
+  -webkit-animation: rotate 6s linear infinite;
+  -moz-animation: rotate 6s linear infinite;
+  -o-animation: rotate 6s linear infinite;
+  transform-origin: 50% 82%;
+  -moz-transform-origin: 50% 82%;
+  -webkit-transform-origin: 50% 82%;
+  -ms-transform-origin: 50% 82%;
+  -o-transform-origin: 50% 82%;
+}
+
+.lowerPart .zlmBox {
+  width: 55%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.computer {
+  width: 75%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.compane {
+  padding-bottom: 4vw;
+}
+
+.compane .btnBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+.computer .play {
+  position: absolute;
+  width: 10%;
+  left: 0;
+  right: 0;
+  bottom: 56%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.computer .videoMp4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.quotation {
+  padding-bottom: 11vw;
+}
+
+.quotation .zhzBox {
+  padding-top: 6vw;
+}
+
+.quotation .btnBox {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.lowerPart .zlmBox .olTab {
+  width: 87.4%;
+  overflow: hidden;
+  border-bottom: 1px solid #00FDFE;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 42%;
+}
+
+.lowerPart .zlmBox ol {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 85%;
+}
+
+.lowerPart .zlmBox ol li {
+  float: left;
+  width: 19%;
+  padding: 0 .5%;
+  cursor: pointer;
+}
+
+.lowerPart .zlmBox li img {
+  display: block;
+  width: 100%;
+}
+
+.lowerPart .zlmBox ol li img:first-child {
+  display: none;
+}
+
+.lowerPart .zlmBox ol li.active img:first-child {
+  display: block;
+}
+
+.lowerPart .zlmBox ol li.active img:last-child {
+  display: none;
+}
+
+.lowerPart .zlmBox .ulTab {
+  width: 75%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+}
+
+.lowerPart .zlmBox ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.lowerPart .zlmBox ul li {
+  display: none
+}
+
+.lowerPart .zlmBox ul li.active {
+  display: block
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  color: #068992;
+  background-color: #05021A;
+  padding: 20px 0;
+}
+
+.footer h6 {
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.footer p {
+  line-height: 1.6;
+}
+
+.footer h6 a {
+  line-height: 1.6;
+  padding: 0 15px;
+  color: #068992
+}
+
+.markCode {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.markCode img#wxCodeMark {
+  /* width: 24.85%; */
+  width: 477px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: default;
+}
+
+.markCode img#closeImg {
+  /* width: 2.9%; */
+  width: 56px;
+  position: fixed;
+  top: calc(50% - 285px);
+  left: calc(50% + 230px);
+  margin: auto;
+}

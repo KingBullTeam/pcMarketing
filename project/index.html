@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="utf-8">
+  <style>
+    html,body {
+      width: 100%;
+      min-width: 1200px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 100%;
+      width: 100%;
+      min-width: 1200px;
+      padding-bottom: 198px;
+    }
+    .inner-wrapper {
+      margin: 0 auto;
+      width: 1000px;
+    }
+    .inner-wxcode {
+      margin: 0 auto;
+      width: 70%;
+    }
+    .banner {
+      width: 100%;
+      height: 43.54vw;
+      background: url('./images/banner.png') no-repeat;
+      background-size: cover;
+    }
+    .banner > .inner-wxcode > .code {
+      height: 21.77vw;
+      width: 21.56vw;
+      background: url('./images/code.png') no-repeat;
+      background-size: cover;
+      position: relative;
+      top: 13.4vw;
+      left: 7vw;
+    }
+    .code > img {
+      height: 10vw;
+      width: 10vw;
+      position: absolute;
+      top: 9vw;
+      left: 5.6vw;
+    }
+    .gupiao {
+      width: 100%;
+      margin-top: 42px;
+    }
+    .title {
+      display: block;
+      margin: 0 auto;
+    }
+    .title-1 {
+      margin: 67px auto 48px;
+    }
+    .get-it {
+      width: 26.72vw;
+      display: block;
+      margin: 53px auto 56px;
+      cursor: pointer;
+    }
+    .bg-red {
+      background: #B80B0B;
+    }
+    .sec-2 {
+      padding: 60px 0;
+      position: relative;
+    }
+    .sec-2 > .get-it {
+      height: 60px;
+      width: 228px;
+      position: absolute;
+      top: 490px;
+      left: 380px;
+    }
+    .title-2 {
+      margin: 0 auto 37px;
+    }
+    .title-3 {
+      margin-top: 61px;
+      margin-bottom: 42px;
+    }
+    .title-4 {
+      margin-bottom: 53px;
+    }
+    .rule {
+      height: 100px;
+      width: 100%;
+      padding: 28px 0;
+      background: #696666;
+    }
+    .rule > p, .about > a {
+      text-align: center;
+      color: #ffffff;
+    }
+    .about {
+      margin-bottom: 15px;
+    }
+    .fixed {
+      width: 100%;
+      position: fixed;
+      background-color: #c60707 !important;
+      bottom: 0;
+      left: 0;
+    }
+    .footer {
+      height: 170px;
+      width: 940px;
+      margin: 0 auto;
+      position: relative;
+      padding-top: 28px;
+    }
+    .footer-code {
+      height: 209px;
+      width: 205px;
+      display: inline-block;
+      background: url('./images/code.png') no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -50px;
+    }
+    .footer-code > img {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      top: 85px;
+      left: 53px;
+    }
+    .popup {
+      display: none;
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    .popup-bg {
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+    }
+    .popup-close {
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: -15px;
+      right: 0;
+      cursor: pointer;
+    }
+    .popup-content {
+      height: 28.23vw;
+      width: 25.21vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -12.605vw;
+      margin-top: -14.115vw;
+      background: url('./images/up.png') no-repeat;
+      background-size: cover;
+    }
+    .popup-content > img.code {
+      height: 9.8vw;
+      width: 9.8vw;
+      position: absolute;
+      top: 1.2vw;
+      left: 7.7vw;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="banner">
+    <div class="inner-wxcode">
+      <div class="code">
+        <img src="./images/code-img.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="inner-wrapper">
+    <img class="gupiao" src="./images/gupiao.png" alt="">
+    <img class="title title-1" src="./images/title01.png" alt="">
+    <img src="./images/01.png" alt="">
+    <img class="get-it" src="./images/btn.gif" alt="">
+  </div>
+  <div class="bg-red">
+    <div class="inner-wrapper">
+      <div class="sec-2">
+        <img class="title title-2" src="./images/title02.png" alt="">
+        <img src="./images/02.png" alt="">
+        <img class="get-it" src="./images/btn.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="inner-wrapper">
+    <img class="title title-3" src="./images/title03.png" alt="">
+    <img src="./images/list.png" alt="">
+    <img class="get-it" src="./images/btn.gif" alt="">
+  </div>
+  <div class="bg-red">
+    <div class="inner-wrapper">
+      <div class="sec-2">
+        <img class="title title-4" src="./images/title04.png" alt="">
+        <img src="./images/04.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="rule">
+    <p class="about">
+      <a href="/">关于我们</a>
+      <a href="/">法律声明</a>
+      <a href="/">联系我们</a>
+    </p>
+    <p class="copynght">
+        Copynght@2018 PanGong AI Rughts Resered 版收所有 <br>
+从事证券投资或期货交易，请通过合法证券期货经营机构进行购买。合法机构名单可到中国证监会网站(www.csrc.gov.cn)查询。<br>
+投资有风险 入市须谨慎
+    </p>
+  </div>
+  <div class="bg-red fixed">
+    <div class="footer">
+      <img src="./images/05.png" alt="">
+      <span class="footer-code">
+        <img src="./images/code-img.png" alt="">
+      </span>
+    </div>
+  </div>
+  <div class="popup" id="popup">
+    <div class="popup-bg"></div>
+    <div class="popup-content">
+      <img class="popup-close" src="./images/close.png" alt="">
+      <img class="code" src="./images/code-img.png" alt="">
+    </div>
+  </div>
+</div>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script>
+    $('.get-it').click(function() {
+      document.getElementById('popup').style.display = 'block';
+    })
+    $('.popup-close').click(function() {
+      document.getElementById('popup').style.display = 'none';
+    })
+  </script>
+</html>
