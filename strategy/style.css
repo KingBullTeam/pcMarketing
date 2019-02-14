@@ -1,0 +1,173 @@
+html,
+body,
+div,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: #fff;
+}
+
+.postrt {
+  position: relative;
+}
+
+.postab {
+  position: absolute;
+}
+
+.magat {
+  display: block;
+  margin: 2.6vw auto;
+}
+
+img.bgImg {
+  width: 100%;
+  display: block;
+}
+
+.cont {
+  margin: 0 auto;
+  width: 52.1%;
+}
+
+.btn {
+  margin: 2.6vw auto;
+  display: block;
+  width: 39%;
+  cursor: pointer;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav .wxcode {
+  width: 10%;
+  position: absolute;
+  top: 45%;
+  left: 38%;
+}
+
+.nav .magat {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.nav .btn.cont {
+  position: absolute;
+  top: 54%;
+  left: 0;
+  right: 0;
+  width: 12.29%;
+}
+
+.ttImg1 {
+  width: 55.8%;
+}
+
+.ttImg2 {
+  width: 29.0625%;
+}
+
+.ttImg3 {
+  width: 45.8%;
+}
+
+.ttImg4 {
+  width: 30%;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #696666;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+
+.rightCode {
+  position: fixed;
+  bottom: 10%;
+  right: 0;
+  width: 12%;
+}
+.wxbtn {
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 58%;
+}
+
+.upCode {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.upCode .postrt {
+  width: 23.855%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+.postab.wxcode {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 45%;
+}
+
+.close {
+  cursor: pointer;
+  width: 10%;
+  top: unset !important;
+  bottom: 100% !important;
+  left: 100% !important;
+}
