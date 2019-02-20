@@ -1,0 +1,24 @@
+{
+  "name": "pcmarketing",
+  "version": "1.0.0",
+  "description": "牛股王静态页面",
+  "main": "index.js",
+  "scripts": {
+    "brow": "browser-sync start --server --files \"**/*.css, **/*.html, **/*.js\"",
+    "sesame": "cd sesame & browser-sync start --server --files \"**/*.css, **/*.html, **/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KingBullTeam/pcMarketing.git"
+  },
+  "keywords": [
+    "牛股王",
+    "海能"
+  ],
+  "author": "duanmu_yu@163.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingBullTeam/pcMarketing/issues"
+  },
+  "homepage": "https://github.com/KingBullTeam/pcMarketing#readme"
+}

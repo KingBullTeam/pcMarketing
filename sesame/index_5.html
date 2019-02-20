@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="format-detection" content="telephone=no">
+  <title>量价时空战法</title>
+  <script type="text/javascript" src="./lib/astock.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background: linear-gradient(to right, #fd444a, #fd633d);
+      background: -webkit-linear-gradient(to right, #fd444a, #fd633d);
+    }
+    .wxh {
+      width: 27%;
+      font-weight: bold;
+      font-size: 5vw;
+      color:crimson;
+      text-align: center;
+      position: absolute;
+      bottom: 36vw;
+      left: 36.5%;
+      -webkit-user-select: text;
+      user-select: text;
+    }
+    .btn {
+      width: 80%;
+      height: 18vw;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 11vw;
+      left: 0;
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="widImg" src="./img/05/01.png" alt="">
+    <div class="widBox">
+      <img class="widImg" src="./img/05/02.png" alt="">
+      <div class="wxh" id="wxh">hxzt3096</div>
+      <div class="btn" id="btn"></div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  bridge.init();
+  bridge.setTitle('量价时空战法');
+  var wxh = bridge.search('wxh') || 'hxzt3096';
+  document.getElementById('wxh').innerHTML = wxh;
+    // 粘贴事件绑定
+    var clipboard = new ClipboardJS('.btn', {
+    text: function() {
+      return wxh;
+    },
+  });
+
+  clipboard.on('success', function(e) {
+    e.clearSelection();
+  });
+
+  clipboard.on('error', function(err) {
+    console.log(err);
+  });
+  document.getElementById('btn').onclick = function() {
+    location.href = 'weixin://';
+  }
+</script>
+</html>
