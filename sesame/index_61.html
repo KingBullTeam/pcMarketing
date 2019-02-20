@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="format-detection" content="telephone=no">
+  <title>领打新战法申购新股</title>
+  <script type="text/javascript" src="./lib/astock.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background: #d21b1a;
+    }
+    .wxh {
+      width: 80%;
+      line-height: 10vw;
+      height: 10vw;
+      font-weight: bold;
+      font-size: 5vw;
+      color: #d21b1a;
+      position: absolute;
+      bottom: 35vw;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-left: 30vw;
+      -webkit-user-select:text;
+      -moz-user-select:text;
+      -ms-user-select:text;
+      user-select:text;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="widImg" src="./img/06/06.png" alt="">
+    <div class="widBox">
+      <img class="widImg" src="./img/06/07.png" alt="">
+      <div class="wxh" id="wxh"></div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  bridge.init();
+  bridge.setTitle('领打新战法申购新股');
+  var wxh = bridge.search('wxh') || 'hn6868';
+  document.getElementById('wxh').innerHTML = wxh;
+</script>
+</html>

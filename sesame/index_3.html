@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="format-detection" content="telephone=no">
+  <title>短线高手圈</title>
+  <script type="text/javascript" src="./lib/astock.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .wxh {
+      width: 80%;
+      line-height: 10vw;
+      height: 10vw;
+      font-weight: bold;
+      font-size: 5vw;
+      color: #ffffff;
+      position: absolute;
+      bottom: 10vw;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding-left: 30vw;
+    }
+    .wxhBom {
+      bottom: 12vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="widBox">
+      <img class="widImg" src="./img/03/01.png" alt="">
+      <div id="wxh01" class="wxh wxhTop">hxzt3096</div>
+    </div>
+    <img class="widImg" src="./img/03/02.png" alt="">
+    <img class="widImg" src="./img/03/03.png" alt="">
+    <div class="widBox">
+      <img class="widImg" src="./img/03/04.png" alt="">
+      <div id="wxh02" class="wxh wxhBom">hxzt3096</div>
+    </div>
+    <img class="widImg" src="./img/03/05.png" alt="">
+  </div>
+</body>
+<script type="text/javascript">
+  bridge.init();
+  bridge.setTitle('短线高手圈');
+  var wxh = bridge.search('wxh') || 'hxzt3096';
+  document.getElementById('wxh01').innerHTML = wxh;
+  document.getElementById('wxh02').innerHTML = wxh;
+  // 粘贴事件绑定
+  var clipboard = new ClipboardJS('.wxh', {
+    text: function () {
+      return wxh;
+    },
+  });
+
+  clipboard.on('success', function (e) {
+    e.clearSelection();
+  });
+
+  clipboard.on('error', function (err) {
+    console.log(err);
+  });
+
+  var wAlert = window.alert;
+  window.alert = function (message) {
+    try {
+      var iframe = document.createElement("IFRAME");
+      iframe.style.display = "none";
+      iframe.setAttribute("src", 'data:text/plain,');
+      document.documentElement.appendChild(iframe);
+      var alertFrame = window.frames[0];
+      var iwindow = alertFrame.window;
+      if (iwindow == undefined) {
+        iwindow = alertFrame.contentWindow;
+      }
+      iwindow.alert(message);
+      iframe.parentNode.removeChild(iframe);
+    } catch (exc) {
+      return wAlert(message);
+    }
+  }
+
+  // 按钮点击弹框
+  var btnMark = function () {
+    var wxBtn = document.getElementsByClassName('wxh');
+    (function (tab) {
+      for (var i = 0, len = wxBtn.length; i < len; i++) {
+        wxBtn[i].onclick = function () {
+          alert('复制成功，请打开微信去添加！');
+        };
+      }
+    })();
+  }
+  btnMark();
+</script>
+
+</html>

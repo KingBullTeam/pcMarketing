@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="format-detection" content="telephone=no">
+  <title>免费领一只好股</title>
+  <!-- <script type="text/javascript" src="https://h5.niuguwang.com/cdn/js/flexble.js"></script> -->
+  <script type="text/javascript" src="./lib/astock.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <script type="text/javascript" src="./js/1.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .btn01 {
+      width: 75%;
+      height: 15vw;
+    }
+
+    .btnTop01 {
+      bottom: 6.5vw;
+    }
+
+    .btnBom01 {
+      bottom: 14vw;
+    }
+
+    .markBg {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .markCont {
+      width: 80%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+    }
+
+    .markCont .wxhBox {
+      width: 19vw;
+      position: absolute;
+      bottom: 34vw;
+      left: 33%;
+      color: #B10004;
+      font-size: 4.5vw;
+      text-align: center;
+    }
+
+    .markCont .closeBtn {
+      width: 7vw;
+      display: block;
+      margin: 2vw auto 0;
+      cursor: pointer;
+    }
+    .markBtn {
+      width: 60%;
+      height: 10vw;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="widBox">
+      <img class="widImg" src="./img/01/01.png" alt="免费领一只好股">
+      <div class="btn btn01 btnTop01 postab"></div>
+    </div>
+    <img class="widImg" src="./img/01/02.png" alt="免费领一只好股">
+    <img class="widImg" src="./img/01/03.png" alt="免费领一只好股">
+    <div class="widBox">
+      <img class="widImg" src="./img/01/04.png" alt="免费领一只好股">
+      <div class="btn btn01 btnBom01 postab"></div>
+    </div>
+  </div>
+  <div class="markBg" id="markBg">
+    <div class="markCont">
+      <div class="widBox">
+        <img class="widImg" src="./img/01/ld.png" alt="">
+        <div id="wxh" class="wxhBox">hn0368</div>
+        <div><a class="wxbtn markBtn" href="weixin://"></a></div>
+        <img id="closeBtn" class="closeBtn" src="./img/01/close_03.png" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

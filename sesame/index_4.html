@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="format-detection" content="telephone=no">
+  <title>短线高手圈</title>
+  <script type="text/javascript" src="./lib/astock.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .wxbtn {
+      width: 80%;
+      height: 13vw;
+      position: absolute;
+      bottom: 6.5vw;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+    .wxhBom {
+      top: 15vw;
+      bottom: unset;
+    }
+    .markBg {
+      display: none;
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .markCont {
+      width: 80%;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+    }
+
+    .markCont .wxhBox {
+      width: 100%;
+      position: absolute;
+      bottom: 36vw;
+      color: #FFF;
+      font-size: 4.5vw;
+      text-align: center;
+    }
+
+    .markCont .closeBtn {
+      width: 7vw;
+      float: right;
+      margin-bottom: 2vw;
+      cursor: pointer;
+    }
+    .markBtn {
+      width: 60%;
+      height: 10vw;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 21vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="widImg" src="./img/04/01.png" alt="">
+    <div class="widBox">
+      <img class="widImg" src="./img/04/02.png" alt="">
+      <div id="wxh01" class="wxbtn wxhTop"></div>
+    </div>
+    <div class="widBox">
+      <img class="widImg" src="./img/04/03.png" alt="">
+      <div id="wxh02" class="wxbtn wxhBom"></div>
+    </div>
+    <img class="widImg" src="./img/04/04.png" alt="">
+  </div>
+
+  <div class="markBg" id="markBg">
+    <div class="markCont">
+      <div class="widBox">
+        <img id="closeBtn" class="closeBtn" src="./img/01/close_03.png" alt="">
+        <img class="widImg" src="./img/04/05.png" alt="">
+        <div id="wxh" class="wxhBox">hn6868</div>
+        <div><a class="wxbtn markBtn" href="weixin://"></a></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  bridge.init();
+  bridge.setTitle('短线高手圈');
+  var wxh = bridge.search('wxh') || 'hn6868';
+  document.getElementById('wxh').innerHTML = wxh;
+  // 粘贴事件绑定
+  var clipboard = new ClipboardJS('.wxbtn', {
+    text: function () {
+      return wxh;
+    },
+  });
+
+  clipboard.on('success', function (e) {
+    e.clearSelection();
+  });
+
+  clipboard.on('error', function (err) {
+    console.log(err);
+  });
+
+  // 按钮点击弹框
+  var btnMark = function () {
+    var wxBtn = document.getElementsByClassName('wxbtn');
+    var markCode = document.getElementById('markBg');
+    var closeBtn = document.getElementById('closeBtn');
+    (function (tab) {
+      for (var i = 0, len = wxBtn.length; i < len; i++) {
+        wxBtn[i].onclick = function () {
+          markCode.style.display = 'block';
+        };
+      }
+    })();
+    closeBtn.onclick = function (e) {
+      markCode.style.display = 'none';
+    }
+  }
+
+  btnMark();
+</script>
+
+</html>
