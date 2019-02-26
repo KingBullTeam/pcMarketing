@@ -1,0 +1,41 @@
+html,
+body,
+div,
+img,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.widBox {
+  width: 100%;
+  position: relative;
+}
+
+.widImg {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.postab {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.wxbtn {
+  cursor: pointer;
+}
