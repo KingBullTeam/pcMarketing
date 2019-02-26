@@ -380,6 +380,12 @@ li {
   color: #fff1bf;
 }
 
+#list li span:last-child {
+  display: inline-block;
+  width: 18%;
+  text-align: right;
+}
+
 .pt-2-1 {
   position: absolute;
   width: 100%;
